@@ -1,0 +1,71 @@
+
+
+Research Unix 7th Edition
+January 1979
+Bell Labs
+
+Research Unix 8th Edition
+February 1985
+Bell Labs
+
+Research Unix 9th Edition
+September 1986
+Bell Labs
+
+Research Unix 10th Edition
+October 1989
+Bell Labs
+
+Plan9 1st Edition
+1992
+Bell Labs
+
+Plan9 2nd Edition
+1995
+Bell Labs
+
+Plan9 3rd Edition
+2000
+Lucent Technologies
+
+Plan9 4th Edition
+2002
+Lucent Technologies
+
+PlanB
+Octopus
+NIX Mark I
+NIX Mark II
+NIX Mark IV
+Clive
+
+Inferno (editions?  Vita Nuova?)
+- beta, 1996, Bell Labs
+- 1.0, May 1997, Bell Labs
+- 2nd Edition, July 1999, Lucent Technologies
+- 3rd Edition, June 2001, Vita Nuova
+- 4th Edition, 2004, Vita Nuova
+
+Blue Gene P9
+
+Plan 9 from User Space / plan9port
+https://9fans.github.io/plan9port/
+
+9front
+9legacy
+9atom
+9vx
+
+9pm
+????
+Sean Quinlan's port of various Plan9 userspace bits to Windows
+
+Jehanne
+http://jehanne.io/pages/overview.html
+
+Harvey OS
+https://harvey-os.org/
+
+Akaros
+https://github.com/brho/akaros
+UCB project with custom kernel, glibc, and bits of Plan9 (network / FS)

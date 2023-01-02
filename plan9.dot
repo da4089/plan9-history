@@ -1,0 +1,36 @@
+digraph D {
+
+        node [shape=record];
+
+        unix7ed [label="Unix Seventh Edition\lJanuary 1979\lBell Labs\l"]
+        unix8ed [label="Unix Eighth Edition\lFebruary 1985\lBell Labs\l"]
+        unix9ed [label="Unix Ninth Edition\lSeptember 1986\lBell Labs\l"]
+        unix10ed [label="Unix Tenth Edition\lOctober 1989\lBell Labs\l"]
+
+        p91ed [label="Plan9 First Edition\l1992\lBell Labs\l"]
+        p92ed [label="Plan9 Second Edition\l1995\lBell Labs\l"]
+        p93ed [label="Plan9 Third Edition\l2000\lLucent Technologies\l"]
+        p94ed [label="Plan9 Fourth Edition\l2002\lLucent Technologies\l"]
+
+        inferno1ed [label="Inferno 1.0\lMay 1997\lBell Labs\l"]
+        inferno2ed [label="Inferno 2nd Edition\lJuly 1999\lLucent Technologies\l"]
+        inferno3ed [label="Inferno 3rd Edition\lJune 2001\lVita Nuova\l"]
+        inferno4ed [label="Inferno 4th Edition\l2004\lVita Nuova\l"]
+
+
+        unix7ed       -> unix8ed
+        unix8ed       -> unix9ed
+        unix9ed       -> unix10ed
+        unix10ed      -> p91ed
+
+        p91ed         -> p92ed
+        p92ed         -> p93ed
+        p93ed         -> p94ed
+
+        p92ed         -> inferno1ed
+        inferno1ed    -> inferno2ed
+        inferno2ed    -> inferno3ed
+        p93ed         -> inferno3ed
+        inferno3ed    -> inferno4ed
+        p94ed         -> inferno4ed
+}
