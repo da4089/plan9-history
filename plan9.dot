@@ -125,10 +125,11 @@ digraph D {
         inferno3ed    -> inferno4ed
         p94ed         -> inferno4ed
 
-        // PlanB based on Plan9, 3rd edition (guess, based on dates)
-        p93ed         -> planb1ed
+        // PlanB 1ed not based on Plan9 (says nemo)
 
+        // PlanB 2ed based on Plan9 4ed (says nemo)
         planb1ed      -> planb2ed
+        p94ed         -> planb2ed
 
         planb2ed      -> planb3ed
 
