@@ -35,8 +35,14 @@ Lucent Technologies
 PlanB
 Octopus
 NIX Mark I
+- See notes at http://9legacy.org/doc.html
+
 NIX Mark II
+- See notes at http://9legacy.org/doc.html
+
 NIX Mark IV
+- https://lsub.org/nix/
+
 Clive
 
 Inferno (editions?  Vita Nuova?)
@@ -61,28 +67,78 @@ inferno-openmoko
 Blue Gene P9
 
 Plan 9 from User Space / plan9port
-https://9fans.github.io/plan9port/
+- https://9fans.github.io/plan9port/
+- https://github.com/9fans/plan9port
 
 9front
 - many, many releases, although it's now settled down to maybe 2 a year?
+
 9legacy
+- http://9legacy.org/index.html
+
+p9 4ed GPLv2 release
+- Berkeley seemed to convince Alcatel-Lucent to do a GPL release
+- https://github.com/brho/plan9
+- Russ Cox
+- Active
+
 9atom
-9vx
+- https://web.archive.org/web/20190215224448/http://www.9atom.org/
 
 9pm
-????
-Sean Quinlan's port of various Plan9 userspace bits to Windows
+- Sean Quinlan's port of various Plan9 userspace bits to Windows
 
 Jehanne
-http://jehanne.io/pages/overview.html
+- http://jehanne.io/pages/overview.html
 
 Harvey OS
-https://harvey-os.org/
+- https://github.com/Harvey-OS/harvey
+- https://harvey-os.org/
 
 Akaros
-- https://github.com/brho/akaros
+- https://github.com/akaros/akaros
+- Also https://github.com/brho/akaros
+- http://akaros.org/news.html
 - UCB project with custom kernel, glibc, and bits of Plan9 (network / FS)
+- Derived from GPLv2 P9 release
+- https://groups.google.com/g/akaros
 
 node9
 - https://github.com/jvburnes/node9
 - descended from Inferno (4th ed?)
+
+9k
+- https://github.com/Plan9-Archive/plan9-9k
+- 64 bit kernel
+- Charles Forsyth
+- 2014/12/30 - 2019/08/25
+- See notes at http://9legacy.org/doc.html
+
+9vx
+- Russ Cox
+- https://swtch.com/9vx/
+- Runs on Unix host, using vx32 libary, "runs as user program, but
+  behaves like a separate VM"
+- June 2008 (on web page)
+
+NxM
+- https://github.com/rminnich/NxM
+- See CONTRIBUTORS (lots)
+- 2012/04/28 - 2013/03/29 (althogh first commit was big, and appears
+  to be a snapshot of NIX)
+- What is it?
+  - Intended to cross-compile from Unix host
+  - CI and regression tests
+  - Linux emulation (!)
+    - Incompatible with NIX due to syscall numbers
+  - Intended to replace all userland with Golang
+  - Remove unneeded stuff (eg. upas)
+
+plan9.io
+- snapshot of what was plan9.bell-labs.com ???
+- Copyright suggests 2006-2008 time range
+
+9p.io
+- 9p.io/sources is replacement for old sources for replica
+- seems current as of January 2023 (eg. Richard Miller's recent 9pi
+  stuff is there)
