@@ -46,12 +46,25 @@ Inferno (editions?  Vita Nuova?)
 - 3rd Edition, June 2001, Vita Nuova
 - 4th Edition, 2004, Vita Nuova
 
+inferno-kirkwood
+- for the "sheevaplug" Marvell Kirkwood ARM SOC
+- https://github.com/mjl-/inferno-kirkwood
+
+inferno-ds
+- for the Nintendo DS
+- ARMv7
+- https://github.com/Plan9-Archive/inferno-ds
+
+inferno-openmoko
+- https://github.com/szhilkin/inferno-openmoko
+
 Blue Gene P9
 
 Plan 9 from User Space / plan9port
 https://9fans.github.io/plan9port/
 
 9front
+- many, many releases, although it's now settled down to maybe 2 a year?
 9legacy
 9atom
 9vx
@@ -67,5 +80,9 @@ Harvey OS
 https://harvey-os.org/
 
 Akaros
-https://github.com/brho/akaros
-UCB project with custom kernel, glibc, and bits of Plan9 (network / FS)
+- https://github.com/brho/akaros
+- UCB project with custom kernel, glibc, and bits of Plan9 (network / FS)
+
+node9
+- https://github.com/jvburnes/node9
+- descended from Inferno (4th ed?)
