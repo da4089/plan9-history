@@ -104,6 +104,28 @@ digraph D {
         inferno_openmoko [label="Inferno for Openmoko\l2009\lUnknown\l"]
 
 
+        // --------------------
+        // 9k
+        // Charles Forsyth's 64bit port
+
+        p9_9k [label="Plan9 9k\l\lCharles Forsyth\l"]
+
+        // --------------------
+        // Harvey
+
+        harvey [label="HarveyOS\l"]
+
+        p94ed_mit     -> harvey
+
+        // --------------------
+        // Jehanne
+
+        jehanne [label="JehanneOS\l"]
+
+        p9front       -> jehanne
+        harvey        -> jehanne
+        p9_9k         -> jehanne
+
 
         // unix7ed       -> unix8ed
         // unix8ed       -> unix9ed

@@ -89,11 +89,22 @@ p9 4ed GPLv2 release
 - Sean Quinlan's port of various Plan9 userspace bits to Windows
 
 Jehanne
-- http://jehanne.io/pages/overview.html
+- http://jehanne.io/ (dead, but archive.org has Dec 2022)
+- http://jehanne.h--k.it/
+- https://gitea.it/JehanneOS/jehanne
+- it says:
+  - userland from 9front
+  - kernel from 9k
+  - other code from Harvey
 
 Harvey OS
 - https://github.com/Harvey-OS/harvey
 - https://harvey-os.org/
+- Wiki says:
+  - derived from p94ed_mit, plus 9legacy patches
+  - Lots of Go code
+  - KenC -> C11
+  - Rust?
 
 Akaros
 - https://github.com/akaros/akaros
