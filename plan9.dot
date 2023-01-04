@@ -5,10 +5,10 @@ digraph D {
         // --------------------
         // Research Unix
 
-        // unix7ed [label="Unix Seventh Edition\lJanuary 1979\lBell Labs\l"]
-        // unix8ed [label="Unix Eighth Edition\lFebruary 1985\lBell Labs\l"]
-        // unix9ed [label="Unix Ninth Edition\lSeptember 1986\lBell Labs\l"]
-        unix10ed [label="Unix Tenth Edition\lOctober 1989\lBell Labs\l"]
+        // unix7ed [label="Research Unix Seventh Edition\lJanuary 1979\lBell Labs\l"]
+        // unix8ed [label="Research Unix Eighth Edition\lFebruary 1985\lBell Labs\l"]
+        // unix9ed [label="Research Unix Ninth Edition\lSeptember 1986\lBell Labs\l"]
+        unix10ed [label="Research Unix Tenth Edition\lOctober 1989\lBell Labs\l"]
 
         // --------------------
         // Plan 9 from Bell Labs
@@ -17,6 +17,17 @@ digraph D {
         p92ed [label="Plan9 Second Edition\l1995\lBell Labs\l"]
         p93ed [label="Plan9 Third Edition\l2000\lLucent Technologies\l"]
         p94ed [label="Plan9 Fourth Edition\l2002\lLucent Technologies\l"]
+
+        p94ed_gpl [label="Plan9 Fourth Edition, GPLv2\l2014\lAlcatel-Lucent\l"]
+        p94ed_final [label="Plan9 Fourth Edition, Final MIT\l2015\lNokia\l"]
+
+        // --------------------
+        // 9legacy
+        // originally, a set of patches against sources @ Bell Labs, maintained by David du Colombier
+        // now a full distrubtion, at 9legacy.org
+
+        p9legacy [label="Plan9 Legacy\l2010-\lDavid du Colombier/Plan 9 Foundation\l"]
+
 
         // --------------------
         // Plan B
@@ -100,6 +111,12 @@ digraph D {
         p91ed         -> p92ed
         p92ed         -> p93ed
         p93ed         -> p94ed
+
+        p94ed         -> p9legacy
+        p94ed         -> p94ed_gpl
+        p94ed         -> p94ed_final
+
+        p94ed_final   -> p9legacy
 
         p92ed         -> inferno1ed
         inferno1ed    -> inferno2ed
