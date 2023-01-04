@@ -2,25 +2,99 @@ digraph D {
 
         node [shape=record];
 
-        unix7ed [label="Unix Seventh Edition\lJanuary 1979\lBell Labs\l"]
-        unix8ed [label="Unix Eighth Edition\lFebruary 1985\lBell Labs\l"]
-        unix9ed [label="Unix Ninth Edition\lSeptember 1986\lBell Labs\l"]
+        // --------------------
+        // Research Unix
+
+        // unix7ed [label="Unix Seventh Edition\lJanuary 1979\lBell Labs\l"]
+        // unix8ed [label="Unix Eighth Edition\lFebruary 1985\lBell Labs\l"]
+        // unix9ed [label="Unix Ninth Edition\lSeptember 1986\lBell Labs\l"]
         unix10ed [label="Unix Tenth Edition\lOctober 1989\lBell Labs\l"]
+
+        // --------------------
+        // Plan 9 from Bell Labs
 
         p91ed [label="Plan9 First Edition\l1992\lBell Labs\l"]
         p92ed [label="Plan9 Second Edition\l1995\lBell Labs\l"]
         p93ed [label="Plan9 Third Edition\l2000\lLucent Technologies\l"]
         p94ed [label="Plan9 Fourth Edition\l2002\lLucent Technologies\l"]
 
+        // --------------------
+        // Plan B
+        // nemo & co
+
+        // 1st ed, user man tr
+        planb1ed [label="PlanB First Edition\l2002\lLSUB\l"]
+
+        // 2nd edition user manual, Postscript
+        planb2ed [label="PlanB Second Edition\lOctober 2003\lLSUB\l"]
+
+        // 3rd ed user manual, GSYC-TR-2005-04
+        planb3ed [label="PlanB Third Edition\l2005\lLSUB\l"]
+
+        // 4th ed user manual
+        // 4th ed source at https://github.com/fjballest/planb
+        planb4ed [label="PlanB Fourth Edition\l2006\lLSUB\l"]
+
+        // --------------------
+        // Octopus
+        octopus1ed [label="Octopus First Edition\lMay 2008\lLSUB\l"]
+
+        // 2nd Edition
+        octopus2ed [label="Octopus Second Edition\lMay 2008\lLSUB\l"]
+
+        // --------------------
+        // NIX
+
+        nixmk1 [label="NIX Mark I\l?\lLaboratorio de Sistemas/Bell Labs/Sandia National Labs/Vitanuova\l"]
+        nixmk2 [label="NIX Mark II\l?\lLaboratorio de Sistemas\l"]
+        nixmk4 [label="NIX Mark IV\l?\lLaboratorio de Sistemas/Bell Labs/Vitanuova\l"]
+
+        // --------------------
+        // 9atom
+
+        p9atom [label="9atom\lApril 2013\lErik Quanstrom\l"]
+
+        // --------------------
+        // 9front
+
+        p9front [label="9front\l?\l9front.org\l"]
+
+        // --------------------
+        // node9
+
+        node9 [label="node9\l2015-2020\lJim Burnes\l"]
+
+        // --------------------
+        // Inferno
+
         inferno1ed [label="Inferno 1.0\lMay 1997\lBell Labs\l"]
         inferno2ed [label="Inferno 2nd Edition\lJuly 1999\lLucent Technologies\l"]
         inferno3ed [label="Inferno 3rd Edition\lJune 2001\lVita Nuova\l"]
         inferno4ed [label="Inferno 4th Edition\l2004\lVita Nuova\l"]
 
+        // --------------------
+        // Inferno for Sheevaplug (Marvell Kirkwood)
+        // https://github.com/mjl-/inferno-kirkwood
 
-        unix7ed       -> unix8ed
-        unix8ed       -> unix9ed
-        unix9ed       -> unix10ed
+        inferno_kirkwood [label="Inferno for Kirkwood\l2010\lMechiel Lukkien\l"]
+
+        // --------------------
+        // Inferno for Nintendo DS
+
+
+        inferno_ds [label="Inferno for Nintendo DS\l2010\lMechiel Lukkien/Noah Evans/Salva Peiró\l"]
+
+        // --------------------
+        // Inferno for Nintendo DS
+        // https://github.com/Plan9-Archive/inferno-openmoko
+
+        inferno_openmoko [label="Inferno for Openmoko\l2009\lUnknown\l"]
+
+
+
+        // unix7ed       -> unix8ed
+        // unix8ed       -> unix9ed
+        // unix9ed       -> unix10ed
         unix10ed      -> p91ed
 
         p91ed         -> p92ed
@@ -33,4 +107,36 @@ digraph D {
         p93ed         -> inferno3ed
         inferno3ed    -> inferno4ed
         p94ed         -> inferno4ed
+
+        // PlanB based on Plan9, 3rd edition (guess, based on dates)
+        p93ed         -> planb1ed
+
+        planb1ed      -> planb2ed
+
+        planb2ed      -> planb3ed
+
+        planb2ed      -> planb4ed
+        planb3ed      -> planb4ed
+        p94ed         -> planb4ed
+
+        planb4ed      -> octopus1ed
+        inferno4ed    -> octopus1ed
+        octopus1ed    -> octopus2ed
+
+        p94ed         -> nixmk1
+        nixmk1        -> nixmk2
+        nixmk2        -> nixmk4
+
+        nixmk2        -> p9atom
+        p94ed         -> p9atom
+
+        p94ed         -> p9front
+
+        inferno4ed    -> node9
+
+        inferno4ed    -> inferno_kirkwood
+
+        inferno4ed    -> inferno_ds
+
+        inferno4ed    -> inferno_openmoko
 }
