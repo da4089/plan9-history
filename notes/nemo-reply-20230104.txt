@@ -1,0 +1,136 @@
+Delivered-To: davida@pobox.com
+X-Pobox-Delivery-ID: E285A2-0D171413E8-1672815964-29049682!pb-mx22.pobox.com
+Received: from pb-mx22.pobox.com (localhost.local [127.0.0.1])
+	by pb-mx22.pobox.com (Postfix) with ESMTP id 0D171413E8
+	for <davida@pobox.com>; Wed,  4 Jan 2023 02:06:04 -0500 (EST)
+	(envelope-from franjballest@gmail.com)
+Received: from pb-mx22.pobox.com (localhost [127.0.0.1])
+    by pb-mx22.pobox.com (Authentication Milter) with ESMTP
+    id 38E0979C397;
+    Wed, 4 Jan 2023 02:06:04 -0500
+Received: from mail-wm1-f43.google.com (mail-wm1-f43.google.com [209.85.128.43])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by pb-mx22.pobox.com (Postfix) with ESMTPS
+	for <davida@pobox.com>; Wed,  4 Jan 2023 02:06:03 -0500 (EST)
+	(envelope-from franjballest@gmail.com)
+Received: by mail-wm1-f43.google.com with SMTP id m8-20020a05600c3b0800b003d96f801c48so23333199wms.0
+        for <davida@pobox.com>; Tue, 03 Jan 2023 23:06:03 -0800 (PST)
+Content-Type: text/plain;
+	charset=utf-8
+Mime-Version: 1.0 (Mac OS X Mail 16.0 \(3731.200.110.1.12\))
+Subject: Re: Plan B / Octopus / NIX history
+From: "Fran. J Ballesteros" <nemo@lsub.org>
+In-Reply-To: <14827056-633C-44EA-8D34-B9D4C557B3E5@pobox.com>
+Date: Wed, 4 Jan 2023 08:05:31 +0100
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <A30BC47C-4A72-4BCF-A351-48C00DB89641@lsub.org>
+References: <14827056-633C-44EA-8D34-B9D4C557B3E5@pobox.com>
+To: David Arnold <davida@pobox.com>
+X-Mailer: Apple Mail (2.3731.200.110.1.12)
+
+Hi,=20
+
+thanks for your work.
+I answer inline.
+
+
+>=20
+> Plan B, 1st Edition
+> - 2002?
+> - User Manual published as TR-GSYC-2002-04, but I can=E2=80=99t find a =
+copy
+> - I assume it=E2=80=99s based on Plan9 3rd Edition (from 2000, with =
+the Lucent licence)?
+>=20
+
+2002, but this one was not really based on Plan 9 IIRC.
+2nd ed. was.
+
+
+> Plan B, 2nd Edition
+> - User manual published October 2003, TR??
+> - Based on?
+>=20
+
+Never distributed, based on Plan 9 4th ed, IIRC.
+2003
+The man was exported as web pages from a b system, and I think it's =
+buried now.
+
+
+> Plan B, 3rd Edition
+> - PerCom 2006 paper says User Manual is GSYC-TR-2005-04, but I can=E2=80=
+=99t find a copy
+> - There=E2=80=99s the 3e and 3eov papers in the 4ed GitHub, but not =
+the user manual
+> - Based on?
+>=20
+
+based on 2nd ed.
+I think this was 2004
+
+> Plan B, 4th Edition
+> - Source code:=20
+> - 2006 (from README Copyright date)?
+> - Based on Plan9 4th Ed (according to README), plus PlanB 2nd and 3rd =
+Edition
+>=20
+
+yep. Early 2006, although IIRC it was 2005.
+
+> Octopus, 1st Edition
+> - Based, I assume, on Inferno 4th ed?
+> - Date?
+>=20
+
+This was 2006, Yes, based on both Plan B and Inferno
+
+> Octopus, 2nd Edition
+> - User manual from lsub papers collection.
+> - Binaries from o.zip on lsub
+> - Date?
+> - Derived from 1st edition, and thus Inferno 4th ed?
+>=20
+
+2007. probably.
+And yes.
+
+
+The Nixies were developed as a set of continuous patches from some guys =
+at the labs and me and
+and I dont think I have the exact dates, but they started 2013.
+I think we took some code from 9atom (some drivers IIRC) and code was =
+sent to others because we had
+64bit support in the kernel.
+
+I think I'd just use NIX, and forget about the marks we used to explain =
+ourselves, mostly.
+
+
+> NIX, Mark I
+> - Date?
+> - from Plan9 4th ed?
+>=20
+> NIX, Mark II
+> - Date?
+> - =46rom Mk I, I guess?  And then merged into 9atom?  Was there =
+reverse flow here, where the canonical NIX Mk2 used the 9atom dist?
+>=20
+> NIX, Mark III
+> - Did this ever exist?
+>=20
+> NIX, Mark IV
+> - Date?
+> - Derived from Mk II, I guess?
+> - What=E2=80=99s the relationship here with 9atom?
+>=20
+> Clive
+> - hosted by Linux or macOS
+> - Golang user programs
+> - So =E2=80=A6 likely not strictly a Plan9 derivative?
+
+Well, many ideas derived from Plan 9, but not any source.
+
+
+Thanks again and HTH.
