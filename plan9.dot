@@ -19,14 +19,16 @@ digraph D {
         p94ed [label="Plan9 Fourth Edition\l2002\lLucent Technologies\l"]
 
         p94ed_gpl [label="Plan9 Fourth Edition, GPLv2\l2014\lAlcatel-Lucent\l"]
-        p94ed_final [label="Plan9 Fourth Edition, Final MIT\l2015\lNokia\l"]
+        p94ed_mit [label="Plan9 Fourth Edition, Final MIT\l2015\lNokia\l"]
+
+        p9_io [label="Plan9 from Bell Labs\l2021-current\lPlan 9 Foundation\l"]
 
         // --------------------
         // 9legacy
         // originally, a set of patches against sources @ Bell Labs, maintained by David du Colombier
         // now a full distrubtion, at 9legacy.org
 
-        p9legacy [label="Plan9 Legacy\l2010-\lDavid du Colombier/Plan 9 Foundation\l"]
+        p9legacy [label="Plan9 Legacy\l2010-\lDavid du Colombier\l"]
 
 
         // --------------------
@@ -114,9 +116,13 @@ digraph D {
 
         p94ed         -> p9legacy
         p94ed         -> p94ed_gpl
-        p94ed         -> p94ed_final
+        p94ed         -> p94ed_mit
 
-        p94ed_final   -> p9legacy
+        p94ed_mit     -> p9legacy
+        p94ed_mit     -> p9_io
+
+        p9_io         -> p9legacy
+        p9legacy      -> p9_io
 
         p92ed         -> inferno1ed
         inferno1ed    -> inferno2ed
