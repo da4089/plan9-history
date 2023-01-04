@@ -69,6 +69,8 @@ Blue Gene P9
 Plan 9 from User Space / plan9port
 - https://9fans.github.io/plan9port/
 - https://github.com/9fans/plan9port
+- Russ Cox
+- Active
 
 9front
 - many, many releases, although it's now settled down to maybe 2 a year?
@@ -79,8 +81,6 @@ Plan 9 from User Space / plan9port
 p9 4ed GPLv2 release
 - Berkeley seemed to convince Alcatel-Lucent to do a GPL release
 - https://github.com/brho/plan9
-- Russ Cox
-- Active
 
 9atom
 - https://web.archive.org/web/20190215224448/http://www.9atom.org/
