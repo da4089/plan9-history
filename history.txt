@@ -42,6 +42,7 @@ NIX Mark II
 
 NIX Mark IV
 - https://lsub.org/nix/
+- https://github.com/rminnich/nix-os
 
 Clive
 
