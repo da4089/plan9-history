@@ -3,12 +3,12 @@ digraph D {
         node [shape=record];
 
         // --------------------
-        // Research Unix
+        // Research UNIX
 
-        // unix7ed [label="Research Unix Seventh Edition\lJanuary 1979\lBell Labs\l"]
-        // unix8ed [label="Research Unix Eighth Edition\lFebruary 1985\lBell Labs\l"]
-        // unix9ed [label="Research Unix Ninth Edition\lSeptember 1986\lBell Labs\l"]
-        unix10ed [label="Research Unix Tenth Edition\lOctober 1989\lBell Labs\l"]
+        // unix7ed [label="Research UNIX Seventh Edition\lJanuary 1979\lBell Labs\l"]
+        // unix8ed [label="Research UNIX Eighth Edition\lFebruary 1985\lBell Labs\l"]
+        // unix9ed [label="Research UNIX Ninth Edition\lSeptember 1986\lBell Labs\l"]
+        unix10ed [label="Research UNIX Tenth Edition\lOctober 1989\lBell Labs\l"]
 
         // --------------------
         // Plan 9 from Bell Labs
