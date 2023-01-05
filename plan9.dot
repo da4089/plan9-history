@@ -4,104 +4,158 @@ digraph D {
 
         // --------------------
         // Research UNIX
-
-        // unix7ed [label="Research UNIX Seventh Edition\lJanuary 1979\lBell Labs\l"]
-        // unix8ed [label="Research UNIX Eighth Edition\lFebruary 1985\lBell Labs\l"]
-        // unix9ed [label="Research UNIX Ninth Edition\lSeptember 1986\lBell Labs\l"]
+        // See various UNIX histories for details
         unix10ed [label="Research UNIX Tenth Edition\lOctober 1989\lBell Labs\l"]
+
 
         // --------------------
         // Plan 9 from Bell Labs
 
         p91ed [label="Plan9 First Edition\l1992\lBell Labs\l"]
+        unix10ed      -> p91ed
+
         p92ed [label="Plan9 Second Edition\l1995\lBell Labs\l"]
+        p91ed         -> p92ed
+
         p93ed [label="Plan9 Third Edition\l2000\lLucent Technologies\l"]
+        p92ed         -> p93ed
+
         p94ed [label="Plan9 Fourth Edition\l2002\lLucent Technologies\l"]
+        p93ed         -> p94ed
 
         p94ed_gpl [label="Plan9 Fourth Edition, GPLv2\l2014\lAlcatel-Lucent\l"]
-        p94ed_mit [label="Plan9 Fourth Edition, Final MIT\l2015\lNokia\l"]
+        p94ed         -> p94ed_gpl
+
+        p94ed_mit [label="Plan9 Fourth Edition, MIT\l2015\lNokia\l"]
+        p94ed         -> p94ed_mit
 
         p9_io [label="Plan9 from Bell Labs\l2021-current\lPlan 9 Foundation\l"]
+        p94ed_mit     -> p9_io
+        p9legacy      -> p9_io  // FIXME: is this accurate?
+
 
         // --------------------
         // 9legacy
         // originally, a set of patches against sources @ Bell Labs, maintained by David du Colombier
         // now a full distrubtion, at 9legacy.org
 
-        p9legacy [label="Plan9 Legacy\l2010-\lDavid du Colombier\l"]
+        p9legacy [label="Plan9 Legacy\l2010-current\lDavid du Colombier\l"]
+        p94ed         -> p9legacy
+        p94ed_mit     -> p9legacy
+        p9_io         -> p9legacy
+
+
+        // --------------------
+        // Inferno
+
+        inferno1ed [label="Inferno 1.0\lMay 1997\lBell Labs\l"]
+        p92ed         -> inferno1ed
+
+        inferno2ed [label="Inferno 2nd Edition\lJuly 1999\lLucent Technologies\l"]
+        inferno1ed    -> inferno2ed
+
+        inferno3ed [label="Inferno 3rd Edition\lJune 2001\lVita Nuova\l"]
+        inferno2ed    -> inferno3ed
+        p93ed         -> inferno3ed
+
+        inferno4ed [label="Inferno 4th Edition\l2004\lVita Nuova\l"]
+        inferno3ed    -> inferno4ed
+        p94ed         -> inferno4ed
 
 
         // --------------------
         // Plan B
         // nemo & co
 
-        // 1st ed, user man tr
+        // nemo: not based on Plan9
         planb1ed [label="PlanB First Edition\l2002\lLSUB\l"]
 
-        // 2nd edition user manual, Postscript
+        // nemo: based on 4th edition
+        // 2nd edition user manaul (PostScript) has October 2003 date
         planb2ed [label="PlanB Second Edition\lOctober 2003\lLSUB\l"]
+        planb1ed      -> planb2ed
+        p94ed         -> planb2ed
 
         // 3rd ed user manual, GSYC-TR-2005-04
         planb3ed [label="PlanB Third Edition\l2005\lLSUB\l"]
+        planb2ed      -> planb3ed
 
         // 4th ed user manual
         // 4th ed source at https://github.com/fjballest/planb
         planb4ed [label="PlanB Fourth Edition\l2006\lLSUB\l"]
+        planb2ed      -> planb4ed
+        planb3ed      -> planb4ed
+        p94ed         -> planb4ed
+
 
         // --------------------
         // Octopus
         octopus1ed [label="Octopus First Edition\lMay 2008\lLSUB\l"]
+        planb4ed      -> octopus1ed
+        inferno4ed    -> octopus1ed
 
         // 2nd Edition
         octopus2ed [label="Octopus Second Edition\lMay 2008\lLSUB\l"]
+        octopus1ed    -> octopus2ed
+
 
         // --------------------
         // NIX
 
         nixmk1 [label="NIX Mark I\l?\lLaboratorio de Sistemas/Bell Labs/Sandia National Labs/Vitanuova\l"]
+        p94ed         -> nixmk1
+
         nixmk2 [label="NIX Mark II\l?\lLaboratorio de Sistemas\l"]
+        nixmk1        -> nixmk2
+
         nixmk4 [label="NIX Mark IV\l?\lLaboratorio de Sistemas/Bell Labs/Vitanuova\l"]
+        nixmk2        -> nixmk4
+
 
         // --------------------
         // 9atom
 
         p9atom [label="9atom\lApril 2013\lErik Quanstrom\l"]
+        nixmk2        -> p9atom
+        p94ed         -> p9atom
+
 
         // --------------------
         // 9front
 
         p9front [label="9front\l?\l9front.org\l"]
+        p94ed         -> p9front
+        p94ed_mit     -> p9front
+
 
         // --------------------
         // node9
 
         node9 [label="node9\l2015-2020\lJim Burnes\l"]
+        inferno4ed    -> node9
 
-        // --------------------
-        // Inferno
-
-        inferno1ed [label="Inferno 1.0\lMay 1997\lBell Labs\l"]
-        inferno2ed [label="Inferno 2nd Edition\lJuly 1999\lLucent Technologies\l"]
-        inferno3ed [label="Inferno 3rd Edition\lJune 2001\lVita Nuova\l"]
-        inferno4ed [label="Inferno 4th Edition\l2004\lVita Nuova\l"]
 
         // --------------------
         // Inferno for Sheevaplug (Marvell Kirkwood)
         // https://github.com/mjl-/inferno-kirkwood
 
-        inferno_kirkwood [label="Inferno for Kirkwood\l2010\lMechiel Lukkien\l"]
+        //inferno_kirkwood [label="Inferno for Kirkwood\l2010\lMechiel Lukkien\l"]
+        //inferno4ed    -> inferno_kirkwood
+
 
         // --------------------
         // Inferno for Nintendo DS
 
+        //inferno_ds [label="Inferno for Nintendo DS\l2010\lMechiel Lukkien/Noah Evans/Salva Peiró\l"]
+        //inferno4ed    -> inferno_ds
 
-        inferno_ds [label="Inferno for Nintendo DS\l2010\lMechiel Lukkien/Noah Evans/Salva Peiró\l"]
 
         // --------------------
-        // Inferno for Nintendo DS
+        // Inferno for the Openmoko 1973/FreeRunner phone
         // https://github.com/Plan9-Archive/inferno-openmoko
 
-        inferno_openmoko [label="Inferno for Openmoko\l2009\lUnknown\l"]
+        //inferno_openmoko [label="Inferno for Openmoko\l2009\lUnknown\l"]
+        //inferno4ed    -> inferno_openmoko
 
 
         // --------------------
@@ -110,79 +164,19 @@ digraph D {
 
         p9_9k [label="Plan9 9k\l\lCharles Forsyth\l"]
 
+
         // --------------------
         // Harvey
 
         harvey [label="HarveyOS\l"]
-
         p94ed_mit     -> harvey
+
 
         // --------------------
         // Jehanne
 
         jehanne [label="JehanneOS\l"]
-
         p9front       -> jehanne
         harvey        -> jehanne
         p9_9k         -> jehanne
-
-
-        // unix7ed       -> unix8ed
-        // unix8ed       -> unix9ed
-        // unix9ed       -> unix10ed
-        unix10ed      -> p91ed
-
-        p91ed         -> p92ed
-        p92ed         -> p93ed
-        p93ed         -> p94ed
-
-        p94ed         -> p9legacy
-        p94ed         -> p94ed_gpl
-        p94ed         -> p94ed_mit
-
-        p94ed_mit     -> p9legacy
-        p94ed_mit     -> p9_io
-
-        p9_io         -> p9legacy
-        p9legacy      -> p9_io
-
-        p92ed         -> inferno1ed
-        inferno1ed    -> inferno2ed
-        inferno2ed    -> inferno3ed
-        p93ed         -> inferno3ed
-        inferno3ed    -> inferno4ed
-        p94ed         -> inferno4ed
-
-        // PlanB 1ed not based on Plan9 (says nemo)
-
-        // PlanB 2ed based on Plan9 4ed (says nemo)
-        planb1ed      -> planb2ed
-        p94ed         -> planb2ed
-
-        planb2ed      -> planb3ed
-
-        planb2ed      -> planb4ed
-        planb3ed      -> planb4ed
-        p94ed         -> planb4ed
-
-        planb4ed      -> octopus1ed
-        inferno4ed    -> octopus1ed
-        octopus1ed    -> octopus2ed
-
-        p94ed         -> nixmk1
-        nixmk1        -> nixmk2
-        nixmk2        -> nixmk4
-
-        nixmk2        -> p9atom
-        p94ed         -> p9atom
-
-        p94ed         -> p9front
-
-        inferno4ed    -> node9
-
-        inferno4ed    -> inferno_kirkwood
-
-        inferno4ed    -> inferno_ds
-
-        inferno4ed    -> inferno_openmoko
 }
