@@ -100,6 +100,7 @@ Jehanne
 Harvey OS
 - https://github.com/Harvey-OS/harvey
 - https://harvey-os.org/
+- https://groups.google.com/g/harvey
 - Wiki says:
   - derived from p94ed_mit, plus 9legacy patches
   - Lots of Go code
@@ -122,8 +123,17 @@ node9
 - https://github.com/Plan9-Archive/plan9-9k
 - 64 bit kernel
 - Charles Forsyth
-- 2014/12/30 - 2019/08/25
+- 2014/12/30 - 2019/08/25 (in GitHub)
 - See notes at http://9legacy.org/doc.html
+- Maybe -- Based on https://github.com/ycui1984/enhanced-plan9?
+  - seems to have been a 2014 GSoC project, although it's not listed
+    under Plan9 on the GSoC 2014 page?
+  - Commits from June to November 2014
+    - Prior to the work in the Plan9-Archive repo above.
+- David du Colombier has a 9k history repo
+  https://github.com/0intro/9k
+  - It shows history from 2011-2013 ...
+  - 386, k10, and k8 sources
 
 9vx
 - Russ Cox
