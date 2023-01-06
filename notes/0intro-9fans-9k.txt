@@ -1,0 +1,90 @@
+Delivered-to: davida@pobox.com
+Received: from pb-mx20.pobox.com (localhost.local [127.0.0.1])
+	by pb-mx20.pobox.com (Postfix) with ESMTP id CCDB1349CB	for
+ <davida@pobox.com>; Sun,
+ 21 Mar 2021 07:09:49 -0400 (EDT)	(envelope-from bounce.mMd06fc52a8c1ac05d0ecaa57d.rf4353e9c-eb83-11e9-92f5-7ab8f5b1d025@9fans.bounce.topicbox.com)
+Received: from pb-mx20.pobox.com (localhost [127.0.0.1])
+ by pb-mx20.pobox.com (Authentication Milter) with ESMTP id FAC5C9D8A1C; Sun,
+ 21 Mar 2021 07:09:49 -0400
+Received: from tb-ob1.topicbox.com (tb-ob1.nyi.icgroup.com [10.90.30.222])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)	by pb-mx20.pobox.com (Postfix)
+ with ESMTPS	for <davida@pobox.com>; Sun,
+ 21 Mar 2021 07:09:49 -0400 (EDT)	(envelope-from
+ bounce.mMd06fc52a8c1ac05d0ecaa57d.rf4353e9c-eb83-11e9-92f5-7ab8f5b1d025@9fans.bounce.topicbox.com)
+Received: from tb-mx0.topicbox.com (tb-mx0.nyi.icgroup.com [10.90.30.73])
+	by tb-ob1.topicbox.com (Postfix) with ESMTP id DD1A51A3DB	for
+ <davida@pobox.com>; Sun,
+ 21 Mar 2021 07:09:48 -0400 (EDT)	(envelope-from bounce.mMd06fc52a8c1ac05d0ecaa57d.rf4353e9c-eb83-11e9-92f5-7ab8f5b1d025@9fans.bounce.topicbox.com)
+Received: by tb-mx0.topicbox.com (Postfix, from userid 1132)
+	id DB4DE1D2BC47; Sun, 21 Mar 2021 07:09:48 -0400 (EDT)
+Received: from tb-mx0.topicbox.com (localhost.local [127.0.0.1])
+	by tb-mx0.topicbox.com (Postfix) with ESMTP id 4A81C1D2B343	for
+ <9fans@9fans.net>; Sun,
+ 21 Mar 2021 07:08:30 -0400 (EDT)	(envelope-from 0intro@gmail.com)
+Received: from tb-mx0.topicbox.com (localhost [127.0.0.1])
+ by tb-mx0.topicbox.com (Authentication Milter) with ESMTP id EBB5FF26F0A; Sun,
+ 21 Mar 2021 07:08:30 -0400
+Received: from mail-qk1-f179.google.com
+ (mail-qk1-f179.google.com [209.85.222.179])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)	by tb-mx0.topicbox.com (Postfix)
+ with ESMTPS	for <9fans@9fans.net>; Sun,
+ 21 Mar 2021 07:08:29 -0400 (EDT)	(envelope-from 0intro@gmail.com)
+Received: by mail-qk1-f179.google.com with SMTP id v70so7722463qkb.8 for
+ <9fans@9fans.net>; Sun, 21 Mar 2021 04:08:29 -0700 (PDT)
+Received: from auth2-smtp.messagingengine.com
+ (auth2-smtp.messagingengine.com. [66.111.4.228])
+ by smtp.gmail.com with ESMTPSA id o76sm8610436qke.79.2021.03.21.04.08.28 for
+ <9fans@9fans.net> (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256)
+ ; Sun, 21 Mar 2021 04:08:28 -0700 (PDT)
+Received: from compute3.internal (compute3.nyi.internal [10.202.2.43])
+	by mailauth.nyi.internal (Postfix) with ESMTP id EC07627C0054	for
+ <9fans@9fans.net>; Sun, 21 Mar 2021 07:08:27 -0400 (EDT)
+Received: from imap2 ([10.202.2.52]) by compute3.internal (MEProxy); Sun,
+ 21 Mar 2021 07:08:27 -0400
+User-Agent: Cyrus-JMAP/3.5.0-alpha0-206-g078a48fda5-fm-20210226.001-g078a48fd
+MIME-version: 1.0
+Message-id: <1b4be69e-2d42-420e-adcf-a64a82cadc83@www.fastmail.com>
+In-reply-to:
+ <CAFSF3XP_Th8MwtUxnM9OPP0JApuox0tm9=iFy9g6Ran5s1ZPxQ@mail.gmail.com>
+References: <C8012580759E3602274CDCE81A02443F@hera.eonet.ne.jp>
+ <32cefbfb-6a63-40fb-9230-98f90447ca75@www.fastmail.com>
+ <CAFSF3XP_Th8MwtUxnM9OPP0JApuox0tm9=iFy9g6Ran5s1ZPxQ@mail.gmail.com>
+Date: Sun, 21 Mar 2021 12:07:30 +0100
+From: David du Colombier <0intro@gmail.com>
+To: 9fans@9fans.net
+Subject: Re: [9fans] patches from 9front
+Content-type: text/plain; charset=UTF-8
+Topicbox-Message-UUID: c72c618a-8a35-11eb-9d9f-ba0e73cd9169
+Archived-at: =?UTF-8?B?PGh0dHBzOi8vOWZhbnMudG9waWNib3guY29tL2dyb3Vwcy85?=
+ =?UTF-8?B?ZmFucy9UYzgyOTM5ZjFmZGEwZTQ3OS1NZDA2ZmM1MmE4YzFhYzA1ZDBlY2Fh?=
+ =?UTF-8?B?NTdkPg==?=
+List-Help: <https://9fans.topicbox.com/groups/9fans>
+List-Id: "9fans" <9fans.9fans.net>
+List-Post: <mailto:9fans@9fans.net>
+List-Software: Topicbox v0
+List-Subscribe: <https://9fans.topicbox.com/groups/9fans>
+Precedence: list
+Reply-to: 9fans <9fans@9fans.net>
+Content-transfer-encoding: quoted-printable
+List-Unsubscribe: <https://9fans.topicbox.com/groups/9fans>,
+ <mailto:9fans+unsubscribe@9fans.net?subject=x-tx-unsubscribe:2:9fans:437d30aa-c441-11e9-8a57-d036212d11b0:f4353e9c-eb83-11e9-92f5-7ab8f5b1d025:Md06fc52a8c1ac05d0ecaa57d:1:4nLwOQJnv1zPl6BrRGcJUHCdc4-DPXRH0nEk3fqomBA>
+Topicbox-Delivery-ID:
+ 2:9fans:437d30aa-c441-11e9-8a57-d036212d11b0:f4353e9c-eb83-11e9-92f5-7ab8f5b1d025:Md06fc52a8c1ac05d0ecaa57d:1:rcdzLzzyqzdWnHoCqJgClSCsnyhYy1w1nrZ1jbflIQ8
+
+> 9k?
+
+9k is the original 64-bit Plan 9 kernel written by Jim McKie at Bell Labs.
+
+It has been developed at Bell Labs (with external contributions) from 2005
+to 2013 approximately, and has been part of 9legacy since 2016.
+
+--=20
+David du Colombier
+
+------------------------------------------
+9fans: 9fans
+Permalink: https://9fans.topicbox.com/groups/9fans/Tc82939f1fda0e479-Md06fc=
+52a8c1ac05d0ecaa57d
+Delivery options: https://9fans.topicbox.com/groups/9fans/subscription
