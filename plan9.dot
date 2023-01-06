@@ -188,4 +188,12 @@ digraph D {
         p9front       -> jehanne
         harvey        -> jehanne
         p9k           -> jehanne
+
+
+        // --------------------
+        // Akaros
+        // from UCB
+
+        akaros [label="Akaros\l2009-2020\lUCB\l"]
+        p94ed_gpl     -> akaros
 }
