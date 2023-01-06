@@ -123,7 +123,7 @@ node9
 9k
 - https://github.com/Plan9-Archive/plan9-9k
 - 64 bit kernel
-- Charles Forsyth
+- Jim McKie (Charles Forsyth did some compiler work)
 - 2014/12/30 - 2019/08/25 (in GitHub)
 - See notes at http://9legacy.org/doc.html
 - Maybe -- Based on https://github.com/ycui1984/enhanced-plan9?
@@ -135,6 +135,12 @@ node9
   https://github.com/0intro/9k
   - It shows history from 2011-2013 ...
   - 386, k10, and k8 sources
+- used for Blue Gene P9
+
+9exp
+- Charles Forsyth
+- derived from jmk's 9k
+  - with revised port code
 
 9vx
 - Russ Cox

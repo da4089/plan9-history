@@ -35,6 +35,14 @@ digraph D {
 
 
         // --------------------
+        // 9k
+        // Jim McKie's 64bit port at Bell Labs
+
+        p9k [label="9k\l2005-2013\lJim McKie\l"]
+        p94ed         -> p9k
+
+
+        // --------------------
         // 9legacy
         // originally, a set of patches against sources @ Bell Labs, maintained by David du Colombier
         // now a full distrubtion, at 9legacy.org
@@ -43,6 +51,14 @@ digraph D {
         p94ed         -> p9legacy
         p94ed_mit     -> p9legacy
         p9_io         -> p9legacy
+        p9k           -> p9legacy
+
+
+        // --------------------
+        // 9exp
+        // Charles Forsyth's 64 bit kernel
+        p9exp [label="9exp\l???\lCharles Forsyth/Vita Nuova\l"]
+        p9k           -> p9exp
 
 
         // --------------------
@@ -159,13 +175,6 @@ digraph D {
 
 
         // --------------------
-        // 9k
-        // Charles Forsyth's 64bit port
-
-        p9_9k [label="Plan9 9k\l\lCharles Forsyth\l"]
-
-
-        // --------------------
         // Harvey
 
         harvey [label="HarveyOS\l"]
@@ -178,5 +187,5 @@ digraph D {
         jehanne [label="JehanneOS\l"]
         p9front       -> jehanne
         harvey        -> jehanne
-        p9_9k         -> jehanne
+        p9k           -> jehanne
 }
